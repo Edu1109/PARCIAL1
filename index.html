@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="categorias.html">CATEGORIES</a></li>
+                <li><a href="index.html">FAVORITES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <h1>Select your favorites</h1>
+        <div class="movie-list">
+            <div class="image-container" onclick="openPopup('Película 1', 'Descripción de la película 1: Acción ', 'imagen.1.jpg')">
+                <img src="https://i.etsystatic.com/6824854/r/il/8a180c/1477505840/il_570xN.1477505840_r1hi.jpg" alt="Imagen 1">
+                <div class="movie-title">Super Mario Bros 3</div>
+                <div class="movie-genre">Acción</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 2', 'Descripción de la película 2: Comedia', 'imagen.2.jpg')">
+                <img src="https://image.api.playstation.com/vulcan/img/cfn/11307CjjUZ9rA_whmJUghJsG9Hl1-rmnOUTk3-nccj01ZpYMCHrJ8k8kzBrVyp-p-iCPej73TEJAs88ZBeiZ1uirtj0fsa16.png" alt="Imagen 2">
+                <div class="movie-title">Call of Duty</div>
+                <div class="movie-genre">Comedia</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 3', 'Descripción de la película 3: Drama', 'imagen.3.jpg')">
+                <img src="https://preview.redd.it/i-recreated-the-five-nights-at-freddys-poster-but-only-with-v0-5ugmhc6yfrwb1.png?width=640&crop=smart&auto=webp&s=4407c810ecddb8b3d5b9bcc72b9ddfdb50953c5e" alt="Imagen 3">
+                <div class="movie-title">Five Nights at Freddy's</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 4', 'Descripción de la película 4: Terror', 'imagen.4.jpg')">
+                <img src="https://cdn.europosters.eu/image/750/99518.jpg" alt="Imagen 4">
+                <div class="movie-title">Crash Bandicoot 4</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 5', 'Descripción de la película 5: Ciencia Ficción', 'imagen.5.jpg')">
+                <img src="https://m.media-amazon.com/images/M/MV5BODdjODAyMTAtMDlkYS00ZDE3LWI4MTQtZDc1ZjY1YzQ5MzU2XkEyXkFqcGc@._V1_.jpg" alt="Imagen 5">
+                <div class="movie-title">FIFA 23</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 6', 'Descripción de la película 6: Romance', 'imagen.6.jpg')">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjJiNTFhY2QtNzZkYi00MDNiLWEzNGEtNWE1NzBkOWIxNmY5XkEyXkFqcGc@._V1_.jpg" alt="Imagen 6">
+                <div class="movie-title">God of War</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 7', 'Descripción de la película 7: Aventura', 'imagen.7.jpg')">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDdhMzJhMDAtMzUwNy00NWNmLWEyMjUtZWQ2NGFlYTRiN2JkXkEyXkFqcGc@._V1_.jpg" alt="Imagen 7">
+                <div class="movie-title">Gran Turismo</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 8', 'Descripción de la película 8: Fantasía', 'imagen.8.jpg')">
+                <img src="https://i.ebayimg.com/images/g/GyMAAOSwH0lcP~ih/s-l1200.jpg" alt="Imagen 8">
+                <div class="movie-title">Marvel Spider-Man</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 9', 'Descripción de la película 9: Biografía', 'imagen.9.jpg')">
+                <img src="https://m.media-amazon.com/images/I/61tttHU3WfL._AC_UF894,1000_QL80_.jpg" alt="Imagen 9">
+                <div class="movie-title">Elden Ring</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+            <div class="image-container" onclick="openPopup('Película 10', 'Descripción de la película 10: Thriller', 'imagen.10.jpg')">
+                <img src="https://m.media-amazon.com/images/I/61gEETe5-wL._AC_UF894,1000_QL80_.jpg" alt="Imagen 10">
+                <div class="movie-title">The Legend Of Zelda</div>
+                <button class="movie-button" onclick="toggleButton(event)">Favoritos</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024. Todos los derechos reservados a EDUPRO29.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
